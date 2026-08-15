@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Flashcard Hijaiyah Interaktif</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>📚 Flashcard Hijaiyah</h1>
+    <p>Belajar Huruf Arab dengan Flashcard & Kuis</p>
+  </header>
+
+  <main class="app-main">
+    <!-- Kontrol Pilih Set & Mode -->
+    <section class="control-panel">
+      <label for="set-select">Pilih Materi:</label>
+      <select id="set-select" class="set-select">
+        <!-- opsi akan diisi oleh JavaScript -->
+      </select>
+      <div class="mode-buttons">
+        <button id="btn-flashcard" class="btn-mode active" aria-pressed="true">🔄 Flashcard</button>
+        <button id="btn-kuis" class="btn-mode" aria-pressed="false">❓ Kuis</button>
+      </div>
+    </section>
+
+    <!-- Area Konten Dinamis -->
+    <section id="content-area" class="content-area">
+      <!-- Render dari JS -->
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>Dibuat untuk belajar huruf hijaiyah</p>
+  </footer>
+
+  <script src="data-materi.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
